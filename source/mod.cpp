@@ -19,7 +19,7 @@ static void seq_titleMainOverride(spm::seqdrv::SeqWork *wp)
 {
     wii::gx::GXColor green = {0, 255, 0, 255};
     f32 scale = 0.8f;
-    const char * msg = "SPM Rel Loader";
+    const char * msg = "Super Paper Mario but they're on SPEEEEEED";
     spm::fontmgr::FontDrawStart();
     spm::fontmgr::FontDrawEdge();
     spm::fontmgr::FontDrawColor(&green);
