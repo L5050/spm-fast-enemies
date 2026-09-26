@@ -219,6 +219,7 @@
 800793e4:itemNameToPtr
 8007a758:itemCollectPouchItem
 8007bccc:itemTypeNameToId
+8007bee4:func_8007bee4
 8007d8b4:itemCheckForId
 // more
 
@@ -1295,6 +1296,7 @@
 8027acf0:PSMTXMultVec
 8027aec0:C_MTXPerspective
 8027afac:C_MTXOrtho
+8027b1f0:PSVECAdd
 8027b4fc:PSVECSquareDistance
 // more
 

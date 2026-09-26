@@ -15,12 +15,18 @@ struct _HitObj;
 
 CPP_WRAPPER_END()
 
+CPP_WRAPPER(spm::itemdrv)
+
+struct _ItemEntry;
+
+CPP_WRAPPER_END()
+
 CPP_WRAPPER(spm::mobjdrv)
 
 USING(spm::evtmgr::EvtEntry)
 USING(spm::evtmgr::EvtScriptCode)
 USING(spm::hitdrv::_HitObj)
-USING(spm::itemdrv::ItemEntry)
+USING(spm::itemdrv::_ItemEntry)
 USING(spm::mapdrv::MapFileJoint)
 USING(wii::mtx::Vec3)
 
@@ -73,7 +79,7 @@ typedef struct _MobjEntry
                 s32 item;
             };
 /* 0x214 */ u8 unknown_0x214[0x218 - 0x214];
-/* 0x218 */ ItemEntry * itemEntry;
+/* 0x218 */ _ItemEntry * itemEntry;
 /* 0x21C */ u8 unknown_0x21c[0x230 - 0x21c];
 /* 0x230 */ void * userWork;
 /* 0x234 */ u8 unknown_0x234[0x23c - 0x234];

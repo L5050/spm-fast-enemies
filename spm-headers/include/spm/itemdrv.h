@@ -8,19 +8,21 @@
 #include <spm/evtmgr.h>
 #include <spm/filemgr.h>
 #include <spm/icondrv.h>
+#include <spm/hitdrv.h>
 #include <wii/mtx.h>
 
 CPP_WRAPPER(spm::itemdrv)
 
 USING(spm::evtmgr::EvtScriptCode)
 USING(spm::evtmgr::EvtVar)
+USING(spm::hitdrv::_HitObj)
 USING(spm::filemgr::FileEntry)
 USING(spm::icondrv::IconEntry)
 USING(wii::mtx::Vec3)
 
 #define ITEM_NAME_MAX 12
 
-typedef struct
+typedef struct _ItemEntry
 {
 /* 0x00 */ u32 flags;
 /* 0x04 */ char name[ITEM_NAME_MAX];
@@ -120,7 +122,7 @@ UNKNOWN_FUNCTION(func_8007bc2c)
 s32 itemTypeNameToId(const char * typeNmae);
 
 UNKNOWN_FUNCTION(func_8007be24)
-UNKNOWN_FUNCTION(func_8007bee4)
+_HitObj * func_8007bee4(double param_1,double param_2,double param_3,ItemEntry *itemEntry,float *param_5,float *param_6,float *param_7,float *param_8);
 UNKNOWN_FUNCTION(func_8007c3b8)
 UNKNOWN_FUNCTION(func_8007c8ec)
 UNKNOWN_FUNCTION(func_8007ce34)

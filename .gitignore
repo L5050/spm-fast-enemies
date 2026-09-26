@@ -6,11 +6,10 @@
 *.user
 *.userosscache
 *.sln.docstates
+*.sh
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
-lib
-lib64
 
 # Build results
 [Dd]ebug/
@@ -267,10 +266,7 @@ __pycache__/
 
 # Project specific
 build.*
-*.lnk
 *.rel
 *.elf
-*.bat
 pcrel*.bin
 private/
-pyvenv.cfg
